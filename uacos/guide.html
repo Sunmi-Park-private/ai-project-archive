@@ -6864,6 +6864,19 @@ body {
 }</style>
 </head>
 <body>
+<style id="archive-layout">
+  /* 안내 배너만큼 앱 높이를 줄여 페이지네이션이 항상 화면 안에 보이게 함 */
+  html,body{height:100%;margin:0}
+  body{display:flex;flex-direction:column}
+  #root{flex:1 1 auto;min-height:0}
+  #root>div,#root .h-screen{height:100%!important}
+  /* 페이지네이션 위치를 모든 페이지에서 동일하게 고정:
+     두 단 레이아웃(1024px 이상)은 가장 긴 페이지(첫 화면, 567px) 높이로 본문 영역을 고정하고,
+     화면이 그보다 낮으면 화면 높이에 맞춰 줄어든다. 한 단 레이아웃은 화면 높이를 채운다. */
+  @media (min-width:1024px){
+    #root .h-screen>div>.overflow-y-auto.flex-1{flex:0 1 568px!important}
+  }
+</style>
 <div id="archive-notice" style="font-family:'Pretendard Variable',Pretendard,system-ui,sans-serif;background:#FFF4EC;border-bottom:1px solid #F5D3BD;color:#3A2A20;font-size:14px;line-height:1.5;padding:10px 16px;text-align:center">
   <b style="color:#E8541E">튜토리얼 가이드 문서</b> · 사내 도구 UACOS의 메뉴별 사용법을 정리한 가이드입니다. 화면은 와이어프레임과 일부 실제 화면 캡처로 구성했으며, 실제 서비스는 사내 포털 로그인 후 사용할 수 있습니다.
   <a href="../index.html" style="color:#E8541E;font-weight:600;text-decoration:none;margin-left:8px;white-space:nowrap">← 아카이브로 돌아가기</a>
