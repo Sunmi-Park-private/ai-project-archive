@@ -73,8 +73,8 @@
 - class-variance-authority
 - clsx
 - d3
-- @gaia-portal/gnb
-- @gaia-ui/core
+- @internal/portal-gnb
+- @internal/ui-core
 - redis_prod_deploy Job
 - hangul-romanization
 - jose
@@ -417,7 +417,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `FastAPI App Prod Values ([S3 IAM 역할])` and `Redis Prod Values (bitnamilegacy/redis standalone)`?**
   _Edge tagged AMBIGUOUS (relation: shares_data_with) - confidence is low._
-- **Why does `dependencies` connect `프론트엔드 런타임 의존성` to `프론트엔드 빌드 의존성`, `히스토리 화면·한글 폰트 등록`, `Google Drive 수집`, `파일명 안전 변환·CloudFront URL`, `chartjs-chart-wordcloud`, `chartjs-plugin-zoom`, `class-variance-authority`, `clsx`, `d3`, `@gaia-portal/gnb`, `@gaia-ui/core`, `hangul-romanization`, `jose`, `next`, `next-themes`, `@radix-ui/react-accordion`, `@radix-ui/react-checkbox`, `@radix-ui/react-collapsible`, `@radix-ui/react-dialog`, `@radix-ui/react-label`, `@radix-ui/react-navigation-menu`, `@radix-ui/react-popover`, `@radix-ui/react-progress`, `@radix-ui/react-scroll-area`, `@radix-ui/react-select`, `@radix-ui/react-separator`, `@radix-ui/react-slider`, `@radix-ui/react-slot`, `@radix-ui/react-switch`, `@radix-ui/react-toggle`, `@radix-ui/react-toggle-group`, `react`, `react-day-picker`, `react-dom`, `server-only`, `sonner`, `@tableau/embedding-api`, `tailwind-merge`, `@types/d3`, `zustand`?**
+- **Why does `dependencies` connect `프론트엔드 런타임 의존성` to `프론트엔드 빌드 의존성`, `히스토리 화면·한글 폰트 등록`, `Google Drive 수집`, `파일명 안전 변환·CloudFront URL`, `chartjs-chart-wordcloud`, `chartjs-plugin-zoom`, `class-variance-authority`, `clsx`, `d3`, `@internal/portal-gnb`, `@internal/ui-core`, `hangul-romanization`, `jose`, `next`, `next-themes`, `@radix-ui/react-accordion`, `@radix-ui/react-checkbox`, `@radix-ui/react-collapsible`, `@radix-ui/react-dialog`, `@radix-ui/react-label`, `@radix-ui/react-navigation-menu`, `@radix-ui/react-popover`, `@radix-ui/react-progress`, `@radix-ui/react-scroll-area`, `@radix-ui/react-select`, `@radix-ui/react-separator`, `@radix-ui/react-slider`, `@radix-ui/react-slot`, `@radix-ui/react-switch`, `@radix-ui/react-toggle`, `@radix-ui/react-toggle-group`, `react`, `react-day-picker`, `react-dom`, `server-only`, `sonner`, `@tableau/embedding-api`, `tailwind-merge`, `@types/d3`, `zustand`?**
   _High betweenness centrality (0.347) - this node is a cross-community bridge._
 - **Why does `uuid` connect `Google Drive 수집` to `태그 추출 엔드포인트·Lambda 호출`?**
   _High betweenness centrality (0.280) - this node is a cross-community bridge._
